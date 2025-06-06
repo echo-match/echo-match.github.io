@@ -21,16 +21,78 @@
         .container {
             text-align: left;
         }
+        .teaser {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .badge-button {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 4px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        .badge-button:hover {
+            background-color: #e9ecef;
+            border-color: #cbd3da;
+        }
+        .buttons-container {
+            margin: 10px 0;
+        }
+        .entry {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
     <h1>EchoMatch</h1>
     <p><strong>Partial-to-Partial Shape Matching via Correspondence Reflection</strong></p>
-    <p><em>Accepted to CVPR 2025</em></p>
+    <p><em>Accepted to <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xie_EchoMatch_Partial-to-Partial_Shape_Matching_via_Correspondence_Reflection_CVPR_2025_paper.html">CVPR 2025</a></em> </p>
+
+    <img src="assets/img1.jpg" alt="EchoMatch Teaser" class="teaser">
     <div class="container">
-        <p><strong>Authors:</strong> Yizheng Xie*, Viktoria Ehm*, Paul Roetzer, Nafie El Amrani, Maolin Gao, Florian Bernard, Daniel Cremers</p>
-        <p><strong>Abstract:</strong> EchoMatch is a novel framework for partial-to-partial shape matching. It introduces correspondence reflection to enable overlap prediction within a functional map framework, outperforming state-of-the-art methods.</p>
-        <p><strong>Code Repository:</strong> <a href="#">GitHub (Coming Soon)</a></p>
+        <p><strong>Authors:</strong> 
+            <a href="https://xieyizheng.com/">Yizheng Xie</a>*,
+            <a href="https://vikiehm.github.io/">Viktoria Ehm</a>*,
+            Paul Roetzer,
+            Nafie El Amrani,
+            Maolin Gao,
+            Florian Bernard,
+            Daniel Cremers
+        </p>
+
+        <p><strong>Abstract:</strong> 
+            EchoMatch is a novel framework for partial-to-partial shape matching. 
+            It introduces correspondence reflection to enable overlap prediction 
+            within a functional map framework, outperforming state-of-the-art methods.
+        </p>
+
+        <div class="entry">
+            <div style="display: flex; gap: 20px; align-items: flex-start">
+                <div>
+                    <p><strong>Paper:</strong></p>
+                    <div class="buttons-container">
+                        <a href="https://xieyizheng.com/media/papers/echomatch/echo_match_paper_reduced.pdf" class="badge-button" role="button">PDF (2MB)</a>
+                        <a href="https://xieyizheng.com/media/papers/echomatch/echo_match_paper.pdf" class="badge-button" role="button">PDF (25MB)</a>
+                    </div>
+                </div>
+                <div>
+                    <p><strong>Code Repository:</strong></p>
+                    <div class="buttons-container">
+                        <a href="#" class="badge-button">GitHub (Coming Soon)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
