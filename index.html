@@ -1,98 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EchoMatch</title>
     <style>
-        body {
+    body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
+            background-color: #ffff;
             color: #333;
-        }
-        p {
-            color: #555;
-        }
-        .container {
-            text-align: left;
-        }
-        .teaser {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-        }
-        .badge-button {
-            display: inline-block;
-            padding: 6px 12px;
-            margin: 4px;
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 4px;
-            color: #333;
-            text-decoration: none;
-            font-size: 14px;
-            transition: all 0.2s ease;
-        }
-        .badge-button:hover {
-            background-color: #e9ecef;
-            border-color: #cbd3da;
-        }
-        .buttons-container {
-            margin: 10px 0;
-        }
-        .entry {
-            margin: 15px 0;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-radius: 4px;
-        }
+          }
+      h1 {
+        color: #ffff;
+      }
+      p {
+        color: #555;
+      }
+      h2 {
+        color: #555;
+      }
+      .authors {
+        color: #ffff;
+      }
+      .container {
+        text-align: left;
+      }
+      .teaser {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+      main {
+        padding: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .badge-button {
+        display: inline-block;
+        padding: 6px 12px;
+        margin: 4px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 6px; 
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.2s ease;
+      }
+      .badge-button:hover {
+        background-color: #e9ecef;
+        border-color: #cbd3da;
+      }
+      .buttons-container {
+        margin: 10px 0;
+      }
+      .entry {
+        margin: 15px 0;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+      }
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .banner-title {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      .banner-authors {
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: 300;
+      }
+      .authors a, .authors a:visited, .authors a:hover, .authors a:active, .authors a:focus {
+        color: white; /* or any color you want */
+        text-decoration: none; /* optional: removes underline */
+      }
+      .abstract-box {
+        background-color: #f1f1f1;
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin: 30px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+      .abstract-box h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .affiliations {
+        margin-top: -1em;
+        margin-bottom: 1em;
+        font-size: 0.9em;
+      }
     </style>
-</head>
-<body>
-    <h1>EchoMatch</h1>
-    <p><strong>Partial-to-Partial Shape Matching via Correspondence Reflection</strong></p>
-    <p><em>Accepted to <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xie_EchoMatch_Partial-to-Partial_Shape_Matching_via_Correspondence_Reflection_CVPR_2025_paper.html">CVPR 2025</a></em> </p>
-
-    <img src="assets/img1.jpg" alt="EchoMatch Teaser" class="teaser">
-    <div class="container">
-        <p><strong>Authors:</strong> 
-            <a href="https://xieyizheng.com/">Yizheng Xie</a>*,
-            <a href="https://vikiehm.github.io/">Viktoria Ehm</a>*,
-            Paul Roetzer,
-            Nafie El Amrani,
-            Maolin Gao,
-            Florian Bernard,
-            Daniel Cremers
-        </p>
-
-        <p><strong>Abstract:</strong> 
-            EchoMatch is a novel framework for partial-to-partial shape matching. 
-            It introduces correspondence reflection to enable overlap prediction 
-            within a functional map framework, outperforming state-of-the-art methods.
-        </p>
-
-        <div class="entry">
-            <div style="display: flex; gap: 20px; align-items: flex-start">
-                <div>
-                    <p><strong>Paper:</strong></p>
-                    <div class="buttons-container">
-                        <a href="https://xieyizheng.com/media/papers/echomatch/echo_match_paper_reduced.pdf" class="badge-button" role="button">PDF (2MB)</a>
-                        <a href="https://xieyizheng.com/media/papers/echomatch/echo_match_paper.pdf" class="badge-button" role="button">PDF (25MB)</a>
-                    </div>
-                </div>
-                <div>
-                    <p><strong>Code Repository:</strong></p>
-                    <div class="buttons-container">
-                        <a href="#" class="badge-button">GitHub (Coming Soon)</a>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+        <h1>
+          EchoMatch: Partial-to-Partial Shape Matching with Correspondence Reflection
+        </h1>
+        <div class=authors>
+            <a href="https://xieyizheng.com/">Yizheng Xie</a>*<sup>1</sup>,
+            <a href="https://vikiehm.github.io/" >Viktoria Ehm</a>*<sup>1,2</sup>, 
+            <a href="http://paulroetzer.github.io">Paul Roetzer</a><sup>3</sup>,
+            <a href="http://nafieamrani.github.io">Nafie El Amrani</a><sup>3</sup>,
+            <a href="http://maolingao.github.io">Maolin Gao</a><sup>1,2</sup>,
+            <a href="http://florianbernard.net">Florian Bernard</a><sup>3</sup>,
+            <a href="https://cvg.cit.tum.de/members/cremers">Daniel Cremers</a><sup>1,2</sup>
+          </p>
+        </div class=authors>
+        <div class=affiliations>
+            <sup>1 </sup>Technical University of Munich,
+            <sup>  2 </sup>Munich Center for Machine Learning,
+            <sup>  3 </sup>University of Bonn
         </div>
+
+        <div class="buttons-container">
+            <a
+              href="https://xieyizheng.com/media/papers/echomatch/echo_match_paper_reduced.pdf"
+              class="badge-button"
+              role="button"
+            >
+              <i class="fas fa-book"></i> PDF (2MB)
+            </a>
+            <a
+              href="https://xieyizheng.com/media/papers/echomatch/echo_match_paper.pdf"
+              class="badge-button"
+              role="button"
+            >
+              <i class="fas fa-book"></i> PDF (25MB)
+            </a>
+            <a
+              href="https://github.com/vikiehm/echo-match/"
+              class="badge-button"
+              role="button"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </header>
+    <main>
+        <div style="display: flex; justify-content: center;">
+        <img src="assets/echo_match_teaser_png.png" alt="EchoMatch Teaser" style="max-width: 100%; height: auto;" />
     </div>
-</body>
+    <p>
+        EchoMatch is a novel framework for <b>partial-to-partial shape matching</b>. It
+        introduces <b>correspondence reflection</b> to enable <b>overlap prediction</b> within a functional map framework, outperforming state-of-the-art methods.
+    </p>
+    <div class="abstract-box">
+        <h2>Abstract</h2>
+        <p>
+            Finding correspondences between 3D shapes is a crucial problem in computer vision and graphics. While most research has focused on finding correspondences in settings where at least one of the shapes is complete, the realm of partial-to-partial shape matching remains under-explored. Yet, it is important since in many applications shapes are only observed partially due to occlusion or scanning. Finding correspondences between partial shapes comes with an additional challenge: We not only want to identify correspondences between points on either shape but also have to determine which points of each shape actually have a partner. To tackle this challenging problem, we present <b> EchoMatch</b>, a novel framework for partial-to-partial shape matching that incorporates the concept of <b>correspondence reflection</b> to enable an overlap prediction within a functional map framework. With this approach, we show that we can outperform current SOTA methods in challenging partial-to-partial shape matching problems.
+        </p>
+      </div>
+    <h2>Pipeline</h2>
+    <div style="display: flex; justify-content: center;">
+    <img src="assets/echo_pipeline_png.png" alt="EchoMatch Pipeline" class="teaser" />  
+    </div> 
+    <p>
+        The <strong>EchoMatch</strong> pipeline consists of four main parts: 
+        <em>1)</em> For two shapes <em>X</em> and <em>Y</em>, we extract per-vertex 
+        feature vectors (collected in feature matrices <em>F<sub>X</sub></em> and 
+        <em>F<sub>Y</sub></em>) using a Diffusion Net.
+        <em>2)</em> Using these features, we predict an overlap score for every point utilizing EchoMatch.
+        <em>3)</em> We compute the functional map utilizing the features (we prune 
+        <em>F<sub>Y</sub></em> to this end).
+        <em>4)</em> Finally, we calculate a point-wise normalized cross-entropy (PointInfoNCE) loss 
+        for both feature matrices <em>F<sub>X</sub></em> and <em>F<sub>Y</sub></em>.
+      </p>
+    </main>
+  </body>
 </html>
